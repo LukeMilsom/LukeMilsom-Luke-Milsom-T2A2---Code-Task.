@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodeTasker</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <%= link_to root_path, class:"navbar-item" do %>
+          <h1 class="title is-5">Flanger</h1>
+        <% end  %>
+      <div class="navbar-burger burger" data-target="navbar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+
+         
+
+            <% if user_signed_in? %>
+           
+            <% else %>
+
+            <%= link_to "Sign In", new_user_session_path, class:"navbar-item button is-warning" %>
+            <%= link_to "Sign up", new_user_registration_path, class:"navbar-item button is-warning"%>
+
+            <% end %>
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+      <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>
