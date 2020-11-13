@@ -1,41 +1,40 @@
-<p id="notice"><%= notice %></p>
+<% content_for :header do %>
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <div class="container">
+      <h1 class="title">
+        Browse the Devs on CodeTask
+      </h1>
+      <div>
+    </div>
+  </section>
+<% end %>
 
-<h1>Devs</h1>
+<div class="instrument-index-grid pt4">
+  <% @devs.each do |dev| %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Dev type</th>
-      <th>Service type</th>
-      <th>Language type</th>
-      <th>Listing name</th>
-      <th>Summary</th>
-      <th>Location town</th>
-      <th>Location country</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="instrument border-light">
+      <div class="instrument-thumb">
+      <%= link_to image_tag(dev.image_url(:thumb)), dev %>
+      
+   
+      </div>
 
-  <tbody>
-    <% @devs.each do |dev| %>
-      <tr>
-        <td><%= dev.dev_type %></td>
-        <td><%= dev.service_type %></td>
-        <td><%= dev.language_type %></td>
-        <td><%= dev.listing_name %></td>
-        <td><%= dev.summary %></td>
-        <td><%= dev.location_town %></td>
-        <td><%= dev.location_country %></td>
-        <td><%= dev.price %></td>
-        <td><%= link_to 'Show', dev %></td>
-        <td><%= link_to 'Edit', edit_dev_path(dev) %></td>
-        <td><%= link_to 'Destroy', dev, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="pa3">
+    
+      <h3 class="fw7 f4 title"><%= link_to dev.listing_name, dev %></h3>
 
-<br>
+      <p class="has-text-gray fg pt1">Sold by <%= dev.user.name %></p>
 
-<%= link_to 'New Dev', new_dev_path %>
+      <p class="f3 fw6 has-text-right pt2 price"><%= number_to_currency(dev.price)%></p>
+
+      <% if dev_author(dev) %>
+        <%= link_to 'Edit', edit_dev_path(dev), class: "button is-small" %>
+        <%= link_to 'Delete', dev, method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-small" %>
+      <% end %>
+
+    </div>
+  </div>
+  <% end %>
+</div>
+
