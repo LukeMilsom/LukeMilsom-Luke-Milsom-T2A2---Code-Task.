@@ -30,6 +30,7 @@ gem 'gravatar-ultimate'
 gem 'carrierwave', '~> 2.0'
 gem "mini_magick"
 gem 'xmlrpc'
+gem 'country_select', '~> 4.0'
 #~~~~~~~~~~~~~~~~~~~~
 
 # Use Active Storage variant

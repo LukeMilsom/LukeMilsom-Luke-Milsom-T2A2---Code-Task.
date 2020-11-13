@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dev_type: MyString
+  service_type: MyString
+  language_type: MyString
+  listing_name: MyString
+  summary: MyText
+  location_town: MyString
+  location_country: MyString
+  price: 1
+
+two:
+  dev_type: MyString
+  service_type: MyString
+  language_type: MyString
+  listing_name: MyString
+  summary: MyText
+  location_town: MyString
+  location_country: MyString
+  price: 1

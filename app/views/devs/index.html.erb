@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Devs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dev type</th>
+      <th>Service type</th>
+      <th>Language type</th>
+      <th>Listing name</th>
+      <th>Summary</th>
+      <th>Location town</th>
+      <th>Location country</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @devs.each do |dev| %>
+      <tr>
+        <td><%= dev.dev_type %></td>
+        <td><%= dev.service_type %></td>
+        <td><%= dev.language_type %></td>
+        <td><%= dev.listing_name %></td>
+        <td><%= dev.summary %></td>
+        <td><%= dev.location_town %></td>
+        <td><%= dev.location_country %></td>
+        <td><%= dev.price %></td>
+        <td><%= link_to 'Show', dev %></td>
+        <td><%= link_to 'Edit', edit_dev_path(dev) %></td>
+        <td><%= link_to 'Destroy', dev, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dev', new_dev_path %>

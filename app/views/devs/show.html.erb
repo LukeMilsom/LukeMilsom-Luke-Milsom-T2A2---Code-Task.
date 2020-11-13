@@ -1,0 +1,100 @@
+
+<% content_for :body_class, 'bg-light' %>
+
+<section class="section instrument-show">
+  <div class="columns">
+    <div class="column is-8">
+      <h1 class="title is-2"><%= @dev.listing_name %></h1>
+
+      <ul class="pv1">
+        <% if @dev.dev_type? %>
+        <li class="inline-block pr3"><%= @dev.dev_type %></li>
+        <% end %>
+
+        <li class="inline-block pr3"><%= @dev.service_type %></li>
+
+        <% if @dev.language_type? %>
+        <li class="inline-block pr3"><%= @dev.language_type %></li>
+        <% end %>
+      </ul>
+
+      <div class="feature-image">
+        <%= image_tag(@dev.image_url(:default)) %>
+      </div>
+
+      <div class="content pa4 mt3 bg-white border-radius-3">
+
+      <h3 class="subtitle is-4">Description</h3>
+      <%= @dev.summary %>
+
+
+      <h3 class="subtitle is-4 pt5">Country</h3>
+
+      <table class="table is-narrow">
+        <% if @dev.location_country %>
+        <tr>
+          <td class="has-text-weight-bold">Town</td>
+          <td><%= @dev.location_town %></td>
+        </tr>
+        <% end %>
+
+    </div>
+    </div>
+    <div class="column is-3 is-offset-1">
+      <div class="bg-white pa4 border-radius-3">
+        <h4 class="title is-5 has-text-centered"><%= number_to_currency(@dev.price) %></h4>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dev type:</strong>
+  <%= @dev.dev_type %>
+</p>
+
+<p>
+  <strong>Service type:</strong>
+  <%= @dev.service_type %>
+</p>
+
+<p>
+  <strong>Language type:</strong>
+  <%= @dev.language_type %>
+</p>
+
+<p>
+  <strong>Listing name:</strong>
+  <%= @dev.listing_name %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @dev.summary %>
+</p>
+
+<p>
+  <strong>Location town:</strong>
+  <%= @dev.location_town %>
+</p>
+
+<p>
+  <strong>Location country:</strong>
+  <%= @dev.location_country %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dev.price %>
+</p>
+
+<%= link_to 'Edit', edit_dev_path(@dev) %> |
+<%= link_to 'Back', devs_path %>
