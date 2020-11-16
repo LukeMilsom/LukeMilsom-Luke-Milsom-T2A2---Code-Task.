@@ -1,6 +1,7 @@
 class Dev < ApplicationRecord
+  before_destroy :not_referenced_by_any_item_selection
     belongs_to :user, optional: true
-
+    has_many :item_selections
     mount_uploader :image, ImageUploader
 
     validates :listing_name, :dev_type, :service_type, 
@@ -13,6 +14,15 @@ class Dev < ApplicationRecord
 
      DEV_TYPE = %w{ Front_End Back_End }
 
+
+private 
+
+def not_referenced_by_any_item_selection
+  unless item_selections.empty?
+  errors.add(:base, "Items present")
+  throw :abort
+  end
+end
 
 end
 

@@ -1,24 +1,61 @@
-<% content_for :header do %>
-  <section class="hero is-warning">
-    <div class="hero-body">
-      <div class="container">
-      <h1 class="title">
-        Browse the Devs on CodeTask
-      </h1>
-      <div>
-    </div>
-  </section>
-<% end %>
+<script>
 
-<div class="instrument-index-grid pt4">
+</script>
+<% if !user_signed_in? %>
+<div class = "linear">
+<% content_for :header do %>
+
+
+<div class="background_image">
+
+
+<%= image_tag"code_task", class: 'fit-image' %>
+
+ <div class="centered"><h1>Code Task.</h1></div>
+  <div class="centered_sub"><h2>Code for you.</h2>
+
+
+</div>
+
+</div>
+
+<%end%>
+
+
+
+<div class="owl-carousel owl-theme">
   <% @devs.each do |dev| %>
 
-    <div class="instrument border-light">
+    <div class="instrument border-dark">
       <div class="instrument-thumb">
-      <%= link_to image_tag(dev.image_url(:thumb)), dev %>
-      
-   
+      <% if user_signed_in? %>
+      <%= link_to image_tag(dev.image_url(:thumb).to_s), dev %>
+      <%else%>
+        <%= link_to image_tag(dev.image_url(:thumb).to_s), new_user_registration_path %>
+        <% end %>
       </div>
+
+<%= content_for(:after_js) do %>
+<script>
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
+  autoPlay: 3000,
+  stagePadding: 50,
+  loop: true,
+  margin:10,
+  responsive:{
+    0:{
+      items:1
+     },
+    600:{
+     items:3
+     }
+   }
+ })
+});
+</script>
+<% end %>
+
 
     <div class="pa3">
     
@@ -31,10 +68,84 @@
       <% if dev_author(dev) %>
         <%= link_to 'Edit', edit_dev_path(dev), class: "button is-small" %>
         <%= link_to 'Delete', dev, method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-small" %>
+        <% else %>
+
+        
+      <% end %>
+      
+
+    </div>
+  </div>
+  <% end %>
+</div>
+
+
+<% end %>
+
+
+      <% if user_signed_in? %>
+
+  <% content_for :header do %>
+  
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <div class="container">
+      <h1 class="title">
+        
+      </h1>
+      <div>
+       <div class="centered-head"><h1 class="singed-in">Find what you're looking for...</h1></div>
+      <div class="centered_sub-head"><h2 class="singed-in-sub">Code for you.</h2>
+    </div>
+  </section>
+<% end %>
+
+<div class="instrument-index-grid pt4">
+  <% @devs.each do |dev| %>
+
+    <div class="instrument border-light">
+      <div class="instrument-thumb">
+      <%= link_to image_tag(dev.image_url(:thumb)), dev %>
+      
+      <% if dev.service_type? %>
+        <div class="condition">
+          <span class="tag is-dark"><%= dev.service_type %></span>
+        </div>
+      <% end %>
+      </div>
+
+    <div class="pa3">
+    
+      <h3 class="fw7 f4 title"><%= link_to dev.listing_name, dev %></h3>
+
+      <p class="has-text-gray fg pt1">Sold by <%= dev.user.name %></p>
+
+      <p class="f3 fw6 has-text-right pt2 price">Starting from<%= number_to_currency(dev.price)%></p>
+
+      <% if dev_author(dev) %>
+        <%= link_to 'Edit', edit_dev_path(dev), class: "button is-small" %>
+        <%= link_to 'Delete', dev, method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-small" %>
       <% end %>
 
     </div>
   </div>
   <% end %>
 </div>
+
+      
+
+      <%end%>
+
+
+
+
+
+
+
+
+
+
+
+
+
 

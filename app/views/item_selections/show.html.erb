@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dev:</strong>
+  <%= @item_selection.dev_id %>
+</p>
+
+<p>
+  <strong>Cart:</strong>
+  <%= @item_selection.cart_id %>
+</p>
+
+<%= link_to 'Edit', edit_item_selection_path(@item_selection) %> |
+<%= link_to 'Back', item_selections_path %>

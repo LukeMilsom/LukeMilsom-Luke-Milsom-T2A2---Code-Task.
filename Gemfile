@@ -31,6 +31,8 @@ gem 'carrierwave', '~> 2.0'
 gem "mini_magick"
 gem 'xmlrpc'
 gem 'country_select', '~> 4.0'
+gem 'bootstrap', '~> 5.0.0.alpha2'
+gem 'jquery-rails'
 #~~~~~~~~~~~~~~~~~~~~
 
 # Use Active Storage variant

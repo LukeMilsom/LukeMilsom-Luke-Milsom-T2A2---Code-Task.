@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Item Selections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dev</th>
+      <th>Cart</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_selections.each do |item_selection| %>
+      <tr>
+        <td><%= item_selection.dev_id %></td>
+        <td><%= item_selection.cart_id %></td>
+        <td><%= link_to 'Show', item_selection %></td>
+        <td><%= link_to 'Edit', edit_item_selection_path(item_selection) %></td>
+        <td><%= link_to 'Destroy', item_selection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item Selection', new_item_selection_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :item_selections
+  resources :carts
   resources :devs
   devise_for :users, controllers: { 
 registrations: 'registrations'
