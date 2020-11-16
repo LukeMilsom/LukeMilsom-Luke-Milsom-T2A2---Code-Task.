@@ -1,6 +1,4 @@
-<script>
-
-</script>
+<% @body_class = "homepage" %>
 <% if !user_signed_in? %>
 <div class = "linear">
 <% content_for :header do %>
@@ -9,7 +7,7 @@
 <div class="background_image">
 
 
-<%= image_tag"code_task", class: 'fit-image' %>
+<%= image_tag "code_task", class: 'fit-image' %>
 
  <div class="centered"><h1>Code Task.</h1></div>
   <div class="centered_sub"><h2>Code for you.</h2>
@@ -20,8 +18,6 @@
 </div>
 
 <%end%>
-
-
 
 <div class="owl-carousel owl-theme">
   <% @devs.each do |dev| %>

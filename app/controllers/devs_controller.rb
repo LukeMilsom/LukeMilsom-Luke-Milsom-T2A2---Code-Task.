@@ -5,11 +5,15 @@ class DevsController < ApplicationController
   # GET /devs.json
   def index
     @devs = Dev.all.order("created_at DESC")
+    def body_class
+      @body_class || ''
+    end
   end
 
   # GET /devs/1
   # GET /devs/1.json
   def show
+
   end
 
   # GET /devs/new
