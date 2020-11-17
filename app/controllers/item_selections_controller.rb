@@ -1,7 +1,7 @@
 class ItemSelectionsController < ApplicationController
-  include CurrentCart
+include CurrentCart
   before_action :set_item_selection, only: [:show, :edit, :update, :destroy]
-  before_action :set_cart, only: [:create]
+  before_action :set_cart, only: [:index, :create, :show]
   # GET /item_selections
   # GET /item_selections.json
   def index
