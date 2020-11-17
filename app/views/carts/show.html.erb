@@ -7,7 +7,7 @@
 
   <div class="columns">
     <div class="column">
-      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
+      <%= link_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
     </div>
     <div class="column total has-text-right">
       <h4 class="title is-4">

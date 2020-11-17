@@ -1,6 +1,6 @@
 document.addEventListener("turbolinks:load", function () {
 
-    var instrumentImage = document.querySelector('.instrument-image');
+    var devImage = document.querySelector('.dev-image');
 
     function handleFileSelect(evt) {
         var files = evt.target.files; // FileList object
@@ -20,7 +20,7 @@ document.addEventListener("turbolinks:load", function () {
                 return function (e) {
                     // Render thumbnail.
                     var span = document.createElement('span');
-                    span.innerHTML = ['<img class="instrument-preview-thumb" src="', e.target.result,
+                    span.innerHTML = ['<img class="dev-preview-thumb" src="', e.target.result,
                         '" title="', escape(theFile.name), '"/>'
                     ].join('');
                     document.getElementById('list').insertBefore(span, null);
@@ -31,7 +31,7 @@ document.addEventListener("turbolinks:load", function () {
         }
     }
 
-    if (instrumentImage) {
+    if (devImage) {
         this.addEventListener('change', handleFileSelect, false);
     }
 
