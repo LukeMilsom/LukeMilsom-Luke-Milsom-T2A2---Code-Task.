@@ -62,7 +62,6 @@ Users are able to edit their account, change their password and cancel their acc
 
 Adding to cart: Users are able to add multiple Services to a cart from the show page, they are also able to destroy a cart or remove an item from a cart if they wish to do so.
 
-<img src = "docs/Screen_Shot_2020-11-19_at_4.49.16_pm.png">
 
 <img src = "docs/Screen_Shot_2020-11-19_at_4.55.47_pm.png">
 
