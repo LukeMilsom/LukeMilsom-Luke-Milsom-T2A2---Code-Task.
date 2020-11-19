@@ -1,7 +1,7 @@
 # Read Me CODE TASK
 
 > R7	Identification of the problem you are trying to solve by building this particular marketplace app.
-
+<img src = "docs/great_nature_lounge_(6).png">
 ![docs/great_nature_lounge_(6).png](.docs/great_nature_lounge_(6).png)
 (Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/great_nature_lounge_(6).png)
 
