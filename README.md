@@ -2,8 +2,7 @@
 
 > R7	Identification of the problem you are trying to solve by building this particular marketplace app.
 <img src = "docs/great_nature_lounge_(6).png">
-![docs/great_nature_lounge_(6).png](.docs/great_nature_lounge_(6).png)
-(Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/great_nature_lounge_(6).png)
+
 
 The problem CodeTask aims to facilitate is catering to the consumers who require a programmatic IT service that is out of scope for the average software development team and small business. 
 
@@ -36,7 +35,7 @@ The purpose of CodeTask is to connect buyers and sellers of Software Development
 
 ***UX:*** A clean, functional User Experience has been implemented throughout the marketplace. To  ensure the users stay and keep coming back to Code Task. 
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.27.04_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.27.04_pm.png)
+![docs/Screen_Shot_2020-11-19_at_4.27.04_pm.png]
 
 ![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.38.59_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.38.59_pm.png)
 
