@@ -4,6 +4,8 @@ class DevsController < ApplicationController
   # GET /devs
   # GET /devs.json
   def index
+
+    
     @devs = Dev.all.order("created_at DESC")
     def body_class
       @body_class || ''

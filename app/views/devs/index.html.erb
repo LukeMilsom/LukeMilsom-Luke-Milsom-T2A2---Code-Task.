@@ -22,13 +22,12 @@
 <div class="owl-carousel owl-theme">
   <% @devs.each do |dev| %>
 
+
     <div class="instrument border-dark">
       <div class="instrument-thumb">
-      <% if user_signed_in? %>
+      
       <%= link_to image_tag(dev.image_url(:thumb).to_s), dev %>
-      <%else%>
-        <%= link_to image_tag(dev.image_url(:thumb).to_s), new_user_registration_path %>
-        <% end %>
+
       </div>
 
 <%= content_for(:after_js) do %>
@@ -98,6 +97,7 @@ $('.owl-carousel').owlCarousel({
 
 <div class="instrument-index-grid pt4">
   <% @devs.each do |dev| %>
+
 
     <div class="instrument border-light">
       <div class="instrument-thumb">

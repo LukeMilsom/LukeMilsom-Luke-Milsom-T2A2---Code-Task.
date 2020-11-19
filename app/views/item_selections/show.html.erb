@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
+<% content_for :header do %>
 
-<p>
-  <strong>Dev:</strong>
-  <%= @item_selection.dev_id %>
-</p>
 
-<p>
-  <strong>Cart:</strong>
-  <%= @item_selection.cart_id %>
-</p>
+<div class= "background_image-item-selection">
 
-<%= link_to 'Edit', edit_item_selection_path(@item_selection) %> |
-<%= link_to 'Back', item_selections_path %>
+
+<%= image_tag "Thanks.jpg", class: 'fit-image' %>
+<div class= "centered-purchase" > <%= link_to "Continue Shopping", root_path, class:"navbar-item button is-warning"%></div>
+
+</div>
+
+<%end%>
+

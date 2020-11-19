@@ -12,6 +12,8 @@
         </div>
      <h1 class="title is-2"><%= @dev.listing_name %></h1>
 
+
+
 <div class="column is-centered feature-image">
         <%= image_tag(@dev.image_url(:default)) %>
       </div>
@@ -33,77 +35,22 @@
 <h1 class="title is-2">Location: <%= @dev.location_town%>, <%= @dev.location_country%></h1>
  <% end %>
 
- <%price = @dev.price%>
+ <% price = @dev.price %>
+
+ <% if user_signed_in? %>
 
 <%= link_to price, item_selections_path(dev_id: @dev), method: :post, class: "navbar-item button is-dark" %>
  
-  
+        <% else %>
+<%= link_to price, new_user_registration_path, class:"navbar-item button is-warning"%>
+        <% end %>
   </div>
 </div>
 
 
 
-<section class="section instrument-show">
-  
-   
-      <ul class="pv1">
-  
-      
-
-
-
-</section>
 
 
 
 
 
-
-
-
-
-
-<!--<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Dev type:</strong>
-  <%= @dev.dev_type %>
-</p>
-
-<p>
-  <strong>Service type:</strong>
-  <%= @dev.service_type %>
-</p>
-
-<p>
-  <strong>Language type:</strong>
-  <%= @dev.language_type %>
-</p>
-
-<p>
-  <strong>Listing name:</strong>
-  <%= @dev.listing_name %>
-</p>
-
-<p>
-  <strong>Summary:</strong>
-  <%= @dev.summary %>
-</p>
-
-<p>
-  <strong>Location town:</strong>
-  <%= @dev.location_town %>
-</p>
-
-<p>
-  <strong>Location country:</strong>
-  <%= @dev.location_country %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @dev.price %>
-</p>
-
-<%= link_to 'Edit', edit_dev_path(@dev) %> |
-<%= link_to 'Back', devs_path %> -->
