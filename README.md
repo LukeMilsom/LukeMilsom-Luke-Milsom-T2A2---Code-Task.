@@ -40,31 +40,38 @@ The purpose of CodeTask is to connect buyers and sellers of Software Development
 
 <img src = "docs/Screen_Shot_2020-11-19_at_4.38.59_pm.png">
 
+<img src = "docs/Screen_Shot_2020-11-19_at_4.39.27_pm.png">
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.39.27_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.39.27_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_4.41.29_pm.png">
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.41.29_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.41.29_pm.png)
 
 ***Swipe Carousel:*** A swipe carousel has been implemented to the landing page, this is mobile responsive and adds depth to the User Experience. The 'Owl Carousel' Ruby Gem coupled with JavaScript was used to Implement this feature.
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.43.27_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.43.27_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_4.43.27_pm.png">
+
 
 ***Account:*** The Devise Ruby gem has been implemented for authentication and authorisation.
  Users will need to 'Sign Up' to create an account in order to access the full site functionality. once signed up users will need to be logged in to their account to make any purchases or list their services for sale. 
 
 Users are able to edit their account, change their password and cancel their account if they are unsatisfied. Users are also able to view each individual listing without having to be logged in.
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.48.46_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.48.46_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_4.48.46_pm.png">
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.49.16_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.49.16_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_4.49.16_pm.png">
+
 
 Adding to cart: Users are able to add multiple Services to a cart from the show page, they are also able to destroy a cart or remove an item from a cart if they wish to do so.
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.55.47_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_4.55.47_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_4.49.16_pm.png">
+
+<img src = "docs/Screen_Shot_2020-11-19_at_4.55.47_pm.png">
+
 
 ### Sitemap
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Untitled.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Untitled.png)
+<img src = "docs/Untitled.png">
+
+
 
 ### Target Audience
 
@@ -125,27 +132,28 @@ Essentially it's for quick and dirty coding tasks, ***fit for purpose.***
 
 ***Index Page***
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Home_Page.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Home_Page.png)
+<img src = "docs/Home_Page.png">
 
 ***Sign Up Page***
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Sign_Up.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Sign_Up.png)
+<img src = "docs/Sign_Up.png">
 
 ***Create A Listing***
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Create_A_Dev.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Create_A_Dev.png)
+<img src = "docs/Create_A_Dev.png">
 
 ***Show Page***
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Show_Page.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Show_Page.png)
+<img src = "docs/Show_Page.png">
 
 ***Cart Page***
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Cart.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Cart.png)
+<img src = "docs/Cart.png">
 
 > R14	An ERD for your app
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/CodeTaskErd_(1).png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/CodeTaskErd_(1).png)
+<img src = "docs/CodeTaskErd_(1).png">
+
 
 > R15	Explain the different high-level components (abstractions) in your app
 
@@ -214,7 +222,8 @@ User_ID is implemented as the foreign key in the Devs table to associate the rel
 
 the association however is not present in the user table to ensure database normalisation
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.17.34_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.17.34_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_12.17.34_pm.png">
+
 
 ### ***Dev -***
 
@@ -224,7 +233,8 @@ The entity cardinality relies on one mandatory User account to be associated to 
 
 The Devs table holds a primary key of 'Dev_ID'. 
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.20.33_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.20.33_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_12.20.33_pm.png">
+
 
 ### ***Dev/item Selection -***
 
@@ -232,7 +242,8 @@ The Item Selections table contains the foreign key of Dev_ID. This foreign key i
 
 The entity cardinality relies on one mandatory Dev Listing to be associated to many optional/no item selections. An item selection must belong to a Dev listing.
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.16.21_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.16.21_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_12.16.21_pm.png">
+
 
 ### ***Cart /Item Selection (line items) -***
 
@@ -240,7 +251,9 @@ The Item Selections table also contains the foreign key of Cart_ID. This foreign
 
 The entity cardinality relies on one mandatory to many optional. Many optional item selections must belong to one Cart.
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.54.56_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_12.54.56_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_12.54.56_pm.png">
+
+
 
 > R19	Provide your database schema design
 
@@ -309,4 +322,5 @@ This project has been tracked and managed using Trello you can see my board here
 
 Throughout the build process the agile methodology approach has been utilised. Due to strict time limitations MVP was the course of action and scope was calculated, tracked and assessed based on priority.  
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_8.17.57_pm.png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/Screen_Shot_2020-11-19_at_8.17.57_pm.png)
+<img src = "docs/Screen_Shot_2020-11-19_at_8.17.57_pm.png">
+
