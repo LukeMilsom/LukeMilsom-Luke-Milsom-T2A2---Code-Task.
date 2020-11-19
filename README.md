@@ -1,16 +1,8 @@
 # Read Me CODE TASK
 
-- [ ]  All queries are sufficiently and clearly commented.
-
-tomorrow night
-
-- [ ]  Image bug
-- [ ]  fix form styling
-- [x]  deploy
-
 > R7	Identification of the problem you are trying to solve by building this particular marketplace app.
 
-![Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/great_nature_lounge_(6).png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/great_nature_lounge_(6).png)
+![docs/great_nature_lounge_(6).png](Read%20Me%20CODE%20TASK%2052ffc264293f4549bb0d0c677e04a541/great_nature_lounge_(6).png)
 
 The problem CodeTask aims to facilitate is catering to the consumers who require a programmatic IT service that is out of scope for the average software development team and small business. 
 
