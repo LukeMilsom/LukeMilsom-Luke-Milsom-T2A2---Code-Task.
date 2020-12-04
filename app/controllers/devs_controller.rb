@@ -1,34 +1,29 @@
 class DevsController < ApplicationController
   before_action :set_dev, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
-  # GET /devs
-  # GET /devs.json
-  def index
 
-    
-    @devs = Dev.all.order("created_at DESC")
+# Query all devs
+  def index
+    @devs = Dev.all.order("created_at DESC").includes(:user)
     def body_class
       @body_class || ''
     end
   end
 
-  # GET /devs/1
-  # GET /devs/1.json
+ 
   def show
-
   end
 
-  # GET /devs/new
+ 
   def new
     @dev = current_user.devs.build
   end
 
-  # GET /devs/1/edit
+
   def edit
   end
 
-  # POST /devs
-  # POST /devs.json
+  # Creation of Dev by Association with Dev Model
   def create
     @dev = current_user.devs.build(dev_params)
 
@@ -43,8 +38,7 @@ class DevsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /devs/1
-  # PATCH/PUT /devs/1.json
+# Update the Dev
   def update
     respond_to do |format|
       if @dev.update(dev_params)
@@ -57,8 +51,7 @@ class DevsController < ApplicationController
     end
   end
 
-  # DELETE /devs/1
-  # DELETE /devs/1.json
+# Delete the Dev
   def destroy
     @dev.destroy
     respond_to do |format|
